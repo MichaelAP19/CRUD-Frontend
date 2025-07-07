@@ -15,7 +15,7 @@ export interface Producto {
   providedIn: 'root'
 })
 export class ProductoService {
-  private apiUrl = 'http://localhost:3000/productos';  // URL 
+  private apiUrl = 'https://api-node-7bm4.onrender.com/productos';  // URL 
 
   constructor(private http: HttpClient) { }
 
