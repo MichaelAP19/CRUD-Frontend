@@ -3,10 +3,16 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
   imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  template: `
+    <div style="text-align: center; margin-top: 20px;">
+      <h1>Hello, {{ title }}</h1>
+    </div>
+    <router-outlet></router-outlet>
+  `
 })
 export class AppComponent {
-  title = 'Dbp_Crud';
+  title = 'User admin';
 }
+
